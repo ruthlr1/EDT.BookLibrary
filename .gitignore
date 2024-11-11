@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/EDT.BookLibrary.API/bin/Debug/net8.0
+/EDT.BookLibrary.API/.vs/EDT.BookLibrary.API
+/EDT.BookLibrary.API/obj
+/EDT.BookLibrary.Application/bin/Debug/net8.0
+/EDT.BookLibrary.Application/obj
+/EDT.BookLibrary.Domain/bin/Debug/net8.0
+/EDT.BookLibrary.Domain/obj
+/EDT.BookLibrary.Persistence/bin/Debug/net8.0
+/EDT.BookLibrary.Persistence/obj
+/EDT.BookLibrary.Tests/bin/Debug/net8.0
+/EDT.BookLibrary.Tests/obj
