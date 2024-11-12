@@ -1,18 +1,22 @@
 ﻿using EDT.BookLibrary.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
-using System.Linq;
 
 namespace EDT.BookLibrary.Persistence.Repo;
 
 public class LibraryContext : DbContext
 {
+    public LibraryContext() // used for unit tests
+    {
+        
+    }
     public LibraryContext(DbContextOptions<LibraryContext> options) : base(options)
     {
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(LibraryContext).Assembly);
         SeedAuthos(modelBuilder);
         SeedGenres(modelBuilder);
         SeedBooks(modelBuilder);

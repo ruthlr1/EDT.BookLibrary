@@ -1,5 +1,4 @@
 using EDT.BookLibrary.API;
-using Microsoft.EntityFrameworkCore.Internal;
 
 var builder = WebApplication.CreateBuilder(args);
 

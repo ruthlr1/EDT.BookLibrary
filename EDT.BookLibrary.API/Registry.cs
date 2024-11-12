@@ -3,7 +3,6 @@ using EDT.BookLibrary.Application.Features.Books;
 using EDT.BookLibrary.Persistence.Repo;
 using EDT.GenreLibrary.Application.Features.Genres;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection;
 
 namespace EDT.BookLibrary.API
 {
@@ -16,11 +15,13 @@ namespace EDT.BookLibrary.API
         }
 
 
+
         public static void RegisterServices(IServiceCollection services)
         {
             services.AddScoped(typeof(IBookService), typeof(BookService));
             services.AddScoped(typeof(IAuthorService), typeof(AuthorService));
             services.AddScoped(typeof(IGenreService), typeof(GenreService));
+
         }
     }
 }
